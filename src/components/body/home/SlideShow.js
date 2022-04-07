@@ -19,7 +19,6 @@ url:
 "https://images.prismic.io/wizeline-academy/edaf28da-2e46-4f75-8a69-a972119f40ed_banner-3-2.jpeg"},
 ];
 export const SlideShow = () => {
-
   //const {data, isLoading} = useFeaturedBanners();
 
 //  if(isLoading){
