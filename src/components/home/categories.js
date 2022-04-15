@@ -1,10 +1,10 @@
 import React from "react";
-import "../../css/grid1.css";
+import "../css/grid1.css";
 import { Link } from "react-router-dom";
 
-import { useFeaturedCategories } from "../../../utils/hooks/useFeaturedCategory";
+import { useFeaturedCategories } from "../../utils/hooks/useFeaturedCategory";
 
-export const Grid1 = () => {
+export const Categories = () => {
   const {data, isLoading} = useFeaturedCategories();
 
   if(isLoading){
@@ -13,8 +13,13 @@ export const Grid1 = () => {
 
   return (
 <>
-    <h1>Categorias</h1>
-    <div className="grid1_content">
+    <div className="cat">
+      <div>
+        <h1><p className="center">Categories</p></h1>
+        <hr className="line"/>
+      </div>
+      
+      <div className="grid1_content">
         {data.results.map((value) => {
         return (
           <div className="responsive" key={value.id}>
@@ -30,6 +35,7 @@ export const Grid1 = () => {
           </div>
         );
       })}
+      </div>
     </div>
   </>    
   );

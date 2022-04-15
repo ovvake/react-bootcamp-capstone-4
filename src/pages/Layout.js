@@ -1,19 +1,22 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { FootDiv } from '../components/footer';
 import { SearchPage } from './search';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
-
+import {CartContext} from "../components/context";
 import '../components/css/navbar1.css';
 import '../components/css/footer.css';
 
 const shoppingCart = <FontAwesomeIcon icon={faCartShopping} />
 
+
 export const Layout = () => {
   let { pathname } = useLocation(); 
   //const pathname = location.pathname;
+  const {carrito, setCarrito} = useContext(CartContext); 
+
 
   return (
     <>
@@ -36,7 +39,9 @@ export const Layout = () => {
             </Link>
           </li>
           <li className="right">
-            <Link to="#">{shoppingCart}</Link>
+            <Link to="/cart">
+                {shoppingCart} {carrito.length}
+            </Link>
           </li>
           <SearchPage/>
         </ul>

@@ -34,7 +34,7 @@ export const Product = () => {
 //      return true;
 //    }
 //  }
-  
+  console.log(dataProduct);
   return (
     <>
     {/*Categorias*/}
@@ -49,7 +49,7 @@ export const Product = () => {
     </div>
   {/*Productos*/}
     <div className="container"> 
-      <h1>This is the Product List Page</h1>
+      <h1 className="center">This is the Product List Page</h1>
       
       {resultado.map((value) => {
         return (
@@ -65,7 +65,9 @@ export const Product = () => {
               </div>
               <div className="product-price-btn">
                 <p><span>{value.data.price}</span>$</p>
-                <button type="button">buy now</button>
+                <button type="button">
+                <Link to={`/products/${value.id}`}>Buy Now</Link>
+                  </button>
               </div>
             </div>
           </div>

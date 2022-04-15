@@ -1,10 +1,15 @@
 import React from "react";
-import { BodyDiv  } from '../components/body/body';
+import { SlideShow } from "../components/home/SlideShow";
+import { Categories } from "../components/home/categories";
+import { FeaturedProducts } from "../components/home/featured_products";
 
-export const Home = () => {
+
+export const Home = ({route,onchange}) => {
     return (
        <div >
-          <BodyDiv />
-        </div>
+        <SlideShow />
+        <Categories />
+        <FeaturedProducts />
+      </div>
     );
   };

@@ -3,7 +3,7 @@ import React from 'react';
 //import { Fade } from 'react-slideshow-image';
 //import 'react-slideshow-image/dist/styles.css'
 import SimpleImageSlider from "react-simple-image-slider";
-import "../../css/slide.css";
+import "../css/slide.css";
 
 //import { useFeaturedBanners } from "../../../utils/hooks/useFeaturedBanners";
 
