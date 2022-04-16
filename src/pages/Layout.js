@@ -16,7 +16,7 @@ export const Layout = () => {
   let { pathname } = useLocation(); 
   //const pathname = location.pathname;
   const {carrito, setCarrito} = useContext(CartContext); 
-
+  console.log(setCarrito);
 
   return (
     <>

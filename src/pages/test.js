@@ -1,20 +1,20 @@
-import React from 'react';
-const themes = ['light', 'dark', 'pink']
+//import React from 'react';
+//const themes = ['light', 'dark', 'pink']
 
-const ThemeContext = React.createContext({
-  theme: themes[0],
-  changeTheme: () => {},
-  shoppingCart: [],
-	setShoppingCart: () => {},
-});
+//const ThemeContext = React.createContext({
+//  theme: themes[0],
+//  changeTheme: () => {},
+//  shoppingCart: [],
+//	setShoppingCart: () => {},
+//});
 
-function ThemeSwitcher () {
-  const { theme, changeTheme } = React.useContext(ThemeContext)
+//function ThemeSwitcher () {
+//  const { theme, changeTheme } = React.useContext(ThemeContext)
 
-  function handleThemeChange (e) {
-    changeTheme(e.target.value)
-  }
-
+//  function handleThemeChange (e) {
+//    changeTheme(e.target.value)
+//  }
+/*
   return (
     <div className='themeSwitcher'>
       Select theme:
@@ -26,9 +26,9 @@ function ThemeSwitcher () {
         )}
       </select>
     </div>
-  )
-}
-
+  )}
+        */
+/*
 const ArticleChild = () => {
   const { theme, shoppingCart, addToShoppingCart } = React.useContext(ThemeContext);
 	
@@ -80,5 +80,5 @@ export function ArticleWrapper () {
     </ThemeContext.Provider>
   )
 }
-
+*/
 //ReactDOM.render(<ArticleWrapper />, document.querySelector("#app"))

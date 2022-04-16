@@ -12,18 +12,27 @@ function sumelem(array){
         
     return sum
 }
-function eliminar(articulo){
-    alert(articulo);
+function eliminar(id){
+    alert(id);
 }
+//const removerDeCarrito = (id)=> {
+//    let index;
+//    let newCarrito = [...carrito]
+//    newCarrito.forEach((articulo, i) => {if (articulo.id == id){ index = i}});
+//    newCarrito.splice(index, 1);
+//    setCarrito(newCarrito);
+//}
+
 export const Cart = () => {
     const {carrito, addToCarrito} = useContext(CartContext);   
     let newCarrito = [...carrito]
     let sumTotal = sumelem(newCarrito);
  
     const items =  carrito.length;
-    if(addToCarrito){
-        return (<p>Cargando</p>);
-    }
+    console.log(addToCarrito);
+    //if(addToCarrito){
+    //    return (<p>Cargando</p>);
+    //}
   
   return (
     <>
@@ -51,7 +60,7 @@ export const Cart = () => {
                     <td>
                         <input 
                             type="button" 
-                            onClick={()=>eliminar(articulo)} 
+                            onClick={()=>eliminar(articulo.data.id)} 
                             value="Eliminar"/>
                     </td>
                 </tr>
