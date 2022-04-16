@@ -55,7 +55,21 @@ div.desc {
     margin: 4px 2px;
     cursor: pointer;
   }
+
+  .cat{
+    width: 100%;
+    border: solid 1px black;
+  }
 }
+.center{
+  text-align: center;
+}
+.line{
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
 
 @media only screen and (max-width: 500px) {
   .responsive {

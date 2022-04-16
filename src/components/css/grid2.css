@@ -6,7 +6,7 @@
   margin: auto;
   width: 50%;
   border: solid black 1px;*/
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -41,7 +41,7 @@ div.gallery {
   
   @media only screen and (max-width: 700px) {
     .responsive {
-      width: 49.99999%;
+      width:100%;
       margin: 6px 0;
     }
     .divbut{
@@ -60,9 +60,18 @@ div.gallery {
       margin: 4px 2px;
       cursor: pointer;
     }
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
   }
   
   @media only screen and (max-width: 500px) {
+    .grid2_content{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
     .responsive {
       width: 100%;
     }
@@ -82,8 +91,38 @@ div.gallery {
       margin: 4px 2px;
       cursor: pointer;
     }
+
+    .first,
+    .second,
+    .third {
+        width: 70%;
+        margin: 10px;
+        display: flex;
+    }
+
   }
   
+  .first {
+    width: 25%;
+    display: inline-block;
+    border: solid 1px #2196F3;
+    margin: 10px;
+}
+
+.second {
+    width: 25%;
+    display: inline-block;
+    border: solid 1px blue;
+    margin: 10px;
+}
+
+.third {
+    width: 25%;
+    display: inline-block;
+    background-color: yellow;
+    margin: 10px;
+}
+
   .clearfix:after {
     content: "";
     display: table;

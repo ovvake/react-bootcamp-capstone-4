@@ -1,0 +1,23 @@
+.con{
+    border: solid 0px black;
+    padding:10px 10px 10px;
+    text-align: center;
+  }
+  
+  .row{
+    border: solid 0px blue;
+    padding: 5px 5px 5px;
+  }
+
+  .col{
+    border: solid 0px #ccc;
+    width: 350px;
+    margin: 3px 3px 3px;
+    display: inline-block;
+  }
+  .w{
+    border: solid 0px pink;
+    padding: 5px 5px 5px;
+    width: 100%;
+    text-align: left;
+  }

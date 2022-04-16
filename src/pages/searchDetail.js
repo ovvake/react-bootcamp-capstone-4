@@ -8,6 +8,7 @@ export const SearchDetail = () => {
     const { search } = useLocation();
     const query = new URLSearchParams(search);
     const text = query.get('q');
+    console.log(text);
     const {data, isLoading} = useSearch(text);
 
     console.log(data);
